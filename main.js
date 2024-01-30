@@ -4,7 +4,6 @@ const cuenta = document.querySelector('.cuenta');
 const botonNPC = document.querySelectorAll('.boton')
 let contador = 0
 
-
 cuenta.addEventListener('click', ()=>{
   const botonNro = document.querySelectorAll('.boton');
   botonNro.forEach( ( cadaBoton , i )=>{
@@ -12,10 +11,6 @@ cuenta.addEventListener('click', ()=>{
   })
   console.log(botonNro)
 })
-
-
-
-
 
 botonInicial.addEventListener('click', ()=>{
   contador++;
@@ -28,8 +23,6 @@ botonInicial.addEventListener('click', ()=>{
   container.appendChild(newButton);
 })
 
-
-  
 container.addEventListener('click', function(event) {
   // Verificar si el clic ocurrió en un elemento con la clase 'boton'
   if (event.target.classList.contains('boton')) {
